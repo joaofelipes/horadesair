@@ -78,7 +78,7 @@ function dothemath() {
 	var saida = entrada.add(ht_hh, 'h');
 	saida = saida.add(ht_mn, 'm').add(almoco_minutos, 'm');
 
-	$( ".result" ).html('Você pode sair ás ' + saida.format("HH:mm"));
+	$( ".result" ).html('Você pode sair às ' + saida.format("HH:mm"));
 	$('.result').show();
 	localStorage.setItem("totalworkhours", $(".horas").val());
 }

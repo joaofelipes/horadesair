@@ -81,6 +81,8 @@ function dothemath() {
 	$( ".result" ).html('Você pode sair às ' + saida.format("HH:mm"));
 	$('.result').show();
 	localStorage.setItem("totalworkhours", $(".horas").val());
+	localStorage.setItem("almoco1", $(".almoco1").val());
+	localStorage.setItem("almoco2", $(".almoco2").val());
 }
 
 $( document ).ready(function(){
@@ -88,13 +90,18 @@ $( document ).ready(function(){
     $('.clockpicker').clockpicker();
 	$('.horas').mask('00:00:00');
 
-	//Salvar Horas trabalhadas
-	if (localStorage.getItem("totalworkhours") === null) {
+	//Restaura horas utlizadas no ultimo acesso
+	if (localStorage.getItem("totalworkhours") == null) {
 		localStorage.setItem("totalworkhours", "08:00");	
-	} else {
-		var totalworkhours = localStorage.getItem("totalworkhours");
-	}
+		localStorage.setItem("almoco1", "12:00");
+		localStorage.setItem("almoco2", "13:00");
+	} 
+	var totalworkhours = localStorage.getItem("totalworkhours");
+	var almoco1 = localStorage.getItem("almoco1");
+	var almoco2 = localStorage.getItem("almoco2");
 	$(".horas").val(totalworkhours);
+	$(".almoco1").val(almoco1);
+	$(".almoco2").val(almoco2);
 
 });
 

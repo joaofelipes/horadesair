@@ -93,8 +93,12 @@ $( document ).ready(function(){
 	//Restaura horas utlizadas no ultimo acesso
 	if (localStorage.getItem("totalworkhours") == null) {
 		localStorage.setItem("totalworkhours", "08:00");	
+	}
+	if (localStorage.getItem("almoco1") == null) {		
 		localStorage.setItem("almoco1", "12:00");
-		localStorage.setItem("almoco2", "13:00");
+	}
+	if (localStorage.getItem("almoco2") == null) {				
+		localStorage.setItem("almoco2", "13:15");
 	} 
 	var totalworkhours = localStorage.getItem("totalworkhours");
 	var almoco1 = localStorage.getItem("almoco1");

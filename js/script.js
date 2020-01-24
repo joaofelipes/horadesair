@@ -86,6 +86,7 @@ function dothemath() {
 }
 
 $( document ).ready(function(){
+	mdc.autoInit();
     $( ".btnok" ).on( "click", dothemath );
     $('.clockpicker').clockpicker();
 	$('.horas').mask('00:00:00');

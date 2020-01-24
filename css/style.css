@@ -1,4 +1,9 @@
+:root {
+  --mdc-theme-primary: #c66e89;
+  --mdc-theme-secondary: #fb9eb9;
+  --mdc-theme-background: #93405c;
+}
+
 .container {
-    padding: 10px;
-    background-color: #d9a3a3;
+    
 }

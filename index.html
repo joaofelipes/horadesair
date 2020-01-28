@@ -88,10 +88,42 @@
 		  </div>
 		  <div class="form-group">
 		  	<label for="horas" class="col-sm-2 control-label"></label>
-			<div class="col-sm-10">
+			<!-- <div class="col-sm-10">
 				<div class="alert alert-info text-center result" role="alert" style='display:none'>
 				</div>
 			</div>
+			-->
+
+            
+          <div class="mdc-dialog"
+		  role="alertdialog"
+		  aria-modal="true"
+		  aria-labelledby="my-dialog-title"
+		  aria-describedby="my-dialog-content">
+    	   <div class="mdc-dialog__container">
+	    	<div class="mdc-dialog__surface">
+			  <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+			  <h2 class="mdc-dialog__title" id="my-dialog-title">Resultado</h2>
+			  <div class="mdc-dialog__content" id="my-dialog-content">
+				<ul class="mdc-list mdc-list--avatar-list">
+				  <li class="mdc-list-item" tabindex="0" data-mdc-dialog-action="none">
+					<span class="mdc-list-item__text">None</span>
+				  </li>
+				</ul>
+			  </div>
+
+				<footer class="mdc-dialog__actions">
+				  <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept" data-mdc-dialog-button-default>
+					<span class="mdc-button__label">OK</span>
+				  </button>
+				</footer>
+
+			</div>
+		  </div>
+		    <div class="mdc-dialog__scrim"></div>
+	      </div>
+
+
 		  </div>
 		</form>
 	</div>

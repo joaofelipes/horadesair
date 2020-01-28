@@ -78,8 +78,17 @@ function dothemath() {
 	var saida = entrada.add(ht_hh, 'h');
 	saida = saida.add(ht_mn, 'm').add(almoco_minutos, 'm');
 
-	$( ".result" ).html('Você pode sair às ' + saida.format("HH:mm"));
-	$('.result').show();
+//	$( ".result" ).html('Você pode sair às ' + saida.format("HH:mm"));
+//	$('.result').show();
+
+    nodeResult = document.querySelector('.mdc-list-item__text');
+    nodeResult.textContent = 'Você pode sair às ' + saida.format("HH:mm");
+
+    htmlDiag = document.querySelector('.mdc-dialog');
+    const dialog = new mdc.dialog.MDCDialog(htmlDiag);
+    dialog.autoStackButtons = false;
+    dialog.open();
+
 	localStorage.setItem("totalworkhours", $(".horas").val());
 	localStorage.setItem("almoco1", $(".almoco1").val());
 	localStorage.setItem("almoco2", $(".almoco2").val());

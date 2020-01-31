@@ -1,6 +1,6 @@
 {
-  "short_name": "Maps",
-  "name": "Google Maps",
+  "short_name": "HoraDeSair",
+  "name": "Hora de Sair",
   "icons": [
     {
       "src": "/horadesair/image/hourglass_192.png",
@@ -16,6 +16,6 @@
   "start_url": "/horadesair/?",
   "background_color": "#cac6c6",
   "display": "standalone",
-  "scope": "/maps/",
+  "scope": "/horadesair/",
   "theme_color": "#6200ee"
 }

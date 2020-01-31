@@ -1,18 +1,19 @@
 {
-  "short_name": "HoraDeSair",
-  "name": "Hora de Sair",
+  "short_name": "Maps",
+  "name": "Google Maps",
   "icons": [
     {
-      "src": "image/hourglass_192.png",
+      "src": "/horadesair/image/hourglass_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "image/hourglass_512.png",
+      "src": "/horadesair/image/hourglass_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
+  "start_url": "/horadesair/?",
   "background_color": "#cac6c6",
   "display": "standalone",
   "scope": "/maps/",

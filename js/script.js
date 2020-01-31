@@ -78,24 +78,32 @@ function dothemath() {
 	var saida = entrada.add(ht_hh, 'h');
 	saida = saida.add(ht_mn, 'm').add(almoco_minutos, 'm');
 
+	console.log(saida.format("HH:mm"));
+
 //	$( ".result" ).html('Você pode sair às ' + saida.format("HH:mm"));
 //	$('.result').show();
+
+    localStorage.setItem("totalworkhours", $(".horas").val());
+	localStorage.setItem("almoco1", $(".almoco1").val());
+	localStorage.setItem("almoco2", $(".almoco2").val());
 
     nodeResult = document.querySelector('.mdc-list-item__text');
     nodeResult.textContent = 'Você pode sair às ' + saida.format("HH:mm");
 
     htmlDiag = document.querySelector('.mdc-dialog');
     const dialog = new mdc.dialog.MDCDialog(htmlDiag);
-    dialog.autoStackButtons = false;
-    dialog.open();
+    dialog.listen('MDCDialog:OK', function() {
+      console.log('OK Pressed!');
+    })
 
-	localStorage.setItem("totalworkhours", $(".horas").val());
-	localStorage.setItem("almoco1", $(".almoco1").val());
-	localStorage.setItem("almoco2", $(".almoco2").val());
+    dialog.open();
 }
 
 $( document ).ready(function(){
-	mdc.autoInit();
+
+    // Inicializando Material Design
+    mdc.autoInit();
+
     $( ".btnok" ).on( "click", dothemath );
     $('.clockpicker').clockpicker();
 	$('.horas').mask('00:00:00');

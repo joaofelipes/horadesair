@@ -1,7 +1,7 @@
 :root {
   --mdc-theme-primary: #6200ee;
   --mdc-theme-secondary: #018786;
-  --mdc-theme-background: #fff;
+  --mdc-theme-background: #cac6c6;
 } 
 
 
@@ -25,5 +25,5 @@
 }
 
 .mdc-button {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }

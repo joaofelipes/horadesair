@@ -1,0 +1,20 @@
+{
+  "short_name": "HoraDeSair",
+  "name": "Hora de Sair",
+  "icons": [
+    {
+      "src": "image/hourglass_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "image/hourglass_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#cac6c6",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#6200ee"
+}

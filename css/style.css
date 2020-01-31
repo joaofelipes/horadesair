@@ -9,3 +9,18 @@
     display: grid;
     margin-top: 1em;
 }
+
+.mdc-dialog__content {
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+.mdc-dialog__title {
+   font-family: Roboto, sans-serif;
+   font-size: 1.4rem;
+   font-weight: bold;
+}
+

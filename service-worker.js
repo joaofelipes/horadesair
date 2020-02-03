@@ -8,10 +8,14 @@ var cacheFiles = [
     './js/bootstrap-clockpicker.min.js',
     './js/bootstrap.min.js',
 	'./js/moment.js',
+    './js/jquery-3.1.1.min.js',
+    './js/jquery.mask.min.js',
 	'./css/bootstrap-clockpicker.min.css',
     './css/bootstrap.min.css',
     './css/material-components-web.min.css',
-    './css/style.css'
+    './css/style.css',
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
+    './fonts/glyphicons-halflings-regular.woff2'
 ]
 
 self.addEventListener('install', function(e) {
